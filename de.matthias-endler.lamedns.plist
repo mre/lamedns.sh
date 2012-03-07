@@ -5,7 +5,7 @@
         <key>KeepAlive</key>
         <false/>
         <key>Label</key>
-        <string>FILELABEL</string>
+        <string>de.matthias-endler.lamedns</string>
         <key>ProgramArguments</key>
         <array>
             <string>/Path/To/lamedns.sh</string>
@@ -17,7 +17,7 @@
         <key>StandardErrorPath</key>
         <string>/dev/null</string>
         <key>StandardOutPath</key>
-        <string>/Path/To/Logfile</string>
+        <string>/var/log/lamedns.log</string>
     </dict>
 </plist>
 
