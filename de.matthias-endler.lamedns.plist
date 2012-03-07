@@ -8,7 +8,7 @@
         <string>FILELABEL</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/Path/To/zerigo_dyndns.sh</string>
+            <string>/Path/To/lamedns.sh</string>
         </array>
         <key>StartInterval</key>
         <integer>3600</integer>
