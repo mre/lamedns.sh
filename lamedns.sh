@@ -1,20 +1,19 @@
 #!/bin/sh
 #
-# shell script to check if external IP has changed and
-# update DynDns account if so
-#
+# Shell script to check if external IP has changed and
+# update DynDNS account if so.
 
 # login user and password
-USER=""
-PW=""
+USER=''
+PW=''
 # file where the last looked-up ip is stored
-IPFILE=""
+IPFILE=''
 # basic DynDNS update URL
-DURL="https://members.dyndns.org/nic/update?"
+DURL='https://members.dyndns.org/nic/update?'
 # the hostname to change with the new IP eg.: test.dyndns.org
-HOST=""
+HOST=''
 
-LAST_IP=`cat ${IPFILE} 2>/dev/null`
+LAST_IP=`cat "${IPFILE}" 2>/dev/null`
 CURRENT_IP=`curl -s http://icanhazip.com`
 
 if [ "$LAST_IP" != "$CURRENT_IP" ]
